@@ -1,0 +1,29 @@
+[
+ {
+  "_id": "_collection",
+  "name": "wallet"
+ },
+ {
+  "_id": "_predicate",
+  "name": "wallet/user",
+  "type": "ref",
+  "index": true,
+  "restrictCollection": "_user"
+ },
+ {
+   "_id": "_predicate",
+   "name": "wallet/name",
+   "type": "string",
+   "index": true,
+  },
+ {
+  "_id": "_predicate",
+  "name": "wallet/balance",
+  "type": "number"
+ },
+{
+  "_id": "_predicate",
+  "name": "wallet/memo",
+  "type": "string"
+ },
+]

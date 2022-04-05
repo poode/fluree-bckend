@@ -1,0 +1,16 @@
+[
+  {
+    "_id": "_fn$ownWallet",
+    "name": "ownWallet?",
+    "code": "SMART FUNCTION CODE HERE"
+  },
+  {
+    "_id": "_rule$editOwnWalletName",
+    "id": "editOwnWalletName",
+    "doc": "A cryptoUser can only edit their own wallet/name",
+    "fns": ["_fn$ownWallet"],
+    "ops": ["transact"],
+    "collection": "wallet",
+    "predicates": ["wallet/name"]
+  }
+]

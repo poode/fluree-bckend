@@ -1,0 +1,16 @@
+[
+  {
+    "_id": "_fn$cantEditWalletUser",
+    "name": "_fn$cantEditWalletUser?",
+    "code": "SMART FUNCTION CODE HERE"
+  },
+  {
+    "_id": "_rule$cantEditWalletUser",
+    "id": "cantEditWalletUser",
+    "doc": "A cryptoUser cannot edit the wallet/user",
+    "fns": ["_fn/name", "false"],
+    "ops": ["all"],
+    "collection": "wallet",
+    "predicates": ["wallet/user"]
+  }
+]

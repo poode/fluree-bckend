@@ -1,0 +1,16 @@
+[
+  {
+    "_id": "_fn$canEditBalance",
+    "name": "_fn$canEditBalance?",
+    "code": "SMART FUNCTION CODE HERE"
+  },
+  {
+    "_id": "_rule$editWalletBalance",
+    "id": "editWalletBalance",
+    "doc": "A cryptoUser can only edit the wallet/balance",
+    "fns": ["_fn/name", "true"],
+    "ops": ["transact"],
+    "collection": "wallet",
+    "predicates": ["wallet/balance"]
+  }
+]

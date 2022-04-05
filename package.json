@@ -1,0 +1,29 @@
+{
+  "name": "server1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node --experimental-specifier-resolution=node src",
+    "start:dev": "nodemon --experimental-specifier-resolution=node src",
+    "start:docker": "docker-compose -f docker-compose1.yaml -f docker-compose2.yaml up --build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fluree/crypto-base": "^0.1.6",
+    "@fluree/crypto-utils": "^1.9.0",
+    "@fluree/flureenjs": "^1.0.0-rc56",
+    "@fluree/sjcl": "^1.0.8-3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
